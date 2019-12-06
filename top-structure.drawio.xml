@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-06T07:03:51.662Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="t2PlromsESDcWS7zwLIB" version="12.3.7" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-06T07:04:49.788Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36" etag="tHfi2qvXCIChSj1xFFHS" version="12.3.7" type="github" pages="1">
   <diagram id="Cg4QGPzYOKSUHrGIV-bA" name="Page-1">
     <mxGraphModel dx="1426" dy="1824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -131,9 +131,6 @@
             <mxPoint x="490" y="180" as="sourcePoint"/>
             <mxPoint x="418.5" y="213.3262852787658" as="targetPoint"/>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="8O4lH1740pWHTLVMLHDN-29" value="说明： &lt;br&gt;1. F5 做统一外网域名映射和统一的负载均衡，沿用现有行内 F5 设备&lt;br&gt;2. 内网软负载服务，用于 Web 服务集群、应用服务集群（Zuul 网关集群、内部核心组件（Apollo、Eureka）的内部负载均衡和导流，放在svr4&lt;br&gt;3.Zuul 网关集群，用来做内部微服务（原子服务、边界服务）的导流、限流，放在 svr5/svr6&lt;br&gt;4.Eureka 服务注册发现集群，用来做内部微服务（原子服务、边界服务、部分微服务监控服务）的服务注册发现，放在 svr5/svr6&lt;br&gt;5.Apollo 统一配置中心集群，用来做各个服务（内部微服务、监控服务）的统一配置管理和灰度发布，放在 svr5/svr6&lt;br&gt;1. Nginx和site部署一台服务器(svr4)；&lt;br&gt;2.Zull网关集群、Apollo集群和Eureka集群部署两台服务器(svr5 svr6)；&lt;br&gt;3.业务服务集群部署三台服务器(svr7 svr8 svr9)；&lt;br&gt;4.周边服务(&lt;span&gt;Zipkin/Hystrix/Hystrix-turbine-dashboard/&lt;/span&gt;Logstash/Kibana/Yapi/Sprint-boot-admin/Cerebro)部署一台服务器(svr10)；&lt;br&gt;5.数据存储类服务(MySQL/ES/Redis/FastDFS/RocketMQ)部署三台服务器(svr1 svr2 svr3)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="86" y="1010" width="700" height="140" as="geometry"/>
         </mxCell>
         <mxCell id="8O4lH1740pWHTLVMLHDN-30" value="Web服务集群" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;arcSize=25;" parent="1" vertex="1">
           <mxGeometry x="392" y="415" width="143" height="162" as="geometry"/>
